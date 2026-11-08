@@ -16,7 +16,8 @@ def main():
         data = b64encode(font.read_bytes()).decode("ascii")
         css = css.replace(f"@{font.name}@", f"data:font/woff;base64,{data}")
     page = page.replace("@CSS@", css)
-    page = page.replace("@FONT_NOTICE@", read("assets/Shabnam-LICENSE.txt"))
+    notices = ("assets/Shabnam-LICENSE.txt", "assets/Noto-LICENSE.txt")
+    page = page.replace("@FONT_NOTICE@", "\n".join(read(notice) for notice in notices))
     # The adapter initializes subscription before the shared code renders it.
     for adapter, output in (
         ("pasarguard", "themes/pasarguard/index.html"),

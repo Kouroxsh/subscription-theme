@@ -3,9 +3,9 @@ const totalBytes = {{ .totalByte }};
 const usedBytes = {{ .uploadByte }} + {{ .downloadByte }};
 const enabled = {{ .enabled }};
 const remainingDays = daysLeft(expiry);
-let status = enabled ? "فعال" : "غیرفعال";
-if (remainingDays === 0) status = "منقضی";
-else if (totalBytes > 0 && usedBytes >= totalBytes) status = "اتمام حجم";
+let status = enabled ? "active" : "disabled";
+if (remainingDays === 0) status = "expired";
+else if (totalBytes > 0 && usedBytes >= totalBytes) status = "limited";
 
 const subscription = {
   id: {{ .sId }},

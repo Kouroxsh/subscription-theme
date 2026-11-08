@@ -1,6 +1,6 @@
 const subscription = {
   id: "DEMO-2026-ABCD1234",
-  status: "فعال",
+  status: "active",
   usedGB: 2.5,
   totalGB: 10,
   remainingDays: 30,

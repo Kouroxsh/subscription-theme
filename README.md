@@ -1,12 +1,24 @@
 # Subscription Theme
 
-A Persian subscription page for PasarGuard and 3x-ui. Users can check their remaining data and time, then copy a subscription link or an individual config.
+A multilingual subscription page for PasarGuard and 3x-ui. Users can check their remaining data and time, then copy a subscription link or an individual config.
 
-![Subscription page preview](preview.png)
+## Previews
+
+### Desktop
+
+| English | فارسی |
+| --- | --- |
+| ![English desktop preview](preview.png) | ![Persian desktop preview](preview-fa.png) |
+
+### Mobile
+
+| English | فارسی |
+| --- | --- |
+| <img src="preview-mobile.png" width="260" alt="English mobile preview"> | <img src="preview-mobile-fa.png" width="260" alt="Persian mobile preview"> |
 
 ## Install
 
-Copy the template for your panel. Each file includes its own styles, scripts, and Shabnam fonts.
+Copy the template for your panel. Each file includes its own styles, scripts, and embedded Shabnam and Noto fonts.
 
 | Panel | Template |
 | --- | --- |
